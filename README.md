@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UCab - MERN Stack Cab Booking Application
 
 UCab is a full-featured MERN stack (MongoDB, Express.js, React.js, Node.js) cab booking application that enables passengers to select vehicles and schedule trips, driver tracking via real-time WebSocket communication, and administrators to oversee overall metrics and fleet updates.
@@ -111,3 +112,6 @@ Run the backend tests:
 npm test
 ```
 The tests check the environment loader, cryptographic password hashes, and JWT signature validation.
+=======
+# CAB-BOOKING
+>>>>>>> origin/main
