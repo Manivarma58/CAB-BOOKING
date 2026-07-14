@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern UI/UX Style Overrides */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Outfit', 'Inter', system-ui, sans-serif;
+  background-color: #F8F9FA;
+  color: #1A1A2E;
+  min-height: 100vh;
+}
+
+/* Design System Utilities (Guaranteed compiler bypass overrides) */
+.bg-primary {
+  background-color: #6C63FF !important;
+}
+.bg-primary-dark {
+  background-color: #5145e5 !important;
+}
+.hover\:bg-primary-dark:hover {
+  background-color: #5145e5 !important;
+}
+.text-primary {
+  color: #6C63FF !important;
+}
+.border-primary {
+  border-color: #6C63FF !important;
+}
+.bg-primary\/10 {
+  background-color: rgba(108, 99, 255, 0.1) !important;
+}
+.bg-primary\/5 {
+  background-color: rgba(108, 99, 255, 0.05) !important;
+}
+.ring-primary\/50 {
+  --tw-ring-color: rgba(108, 99, 255, 0.5) !important;
+}
+.shadow-primary\/20 {
+  --tw-shadow-color: rgba(108, 99, 255, 0.2) !important;
+}
+.shadow-primary\/30 {
+  --tw-shadow-color: rgba(108, 99, 255, 0.3) !important;
+}
+
+.bg-secondary {
+  background-color: #00D2FF !important;
+}
+.bg-secondary-light {
+  background-color: #5ae3ff !important;
+}
+.hover\:bg-secondary-light:hover {
+  background-color: #5ae3ff !important;
+}
+.text-secondary {
+  color: #00D2FF !important;
+}
+.bg-secondary\/10 {
+  background-color: rgba(0, 210, 255, 0.1) !important;
+}
+.bg-secondary\/15 {
+  background-color: rgba(0, 210, 255, 0.15) !important;
+}
+.bg-secondary\/5 {
+  background-color: rgba(0, 210, 255, 0.05) !important;
+}
+.shadow-secondary\/20 {
+  --tw-shadow-color: rgba(0, 210, 255, 0.2) !important;
+}
+
+.bg-accent {
+  background-color: #FF6B6B !important;
+}
+.text-accent {
+  color: #FF6B6B !important;
+}
+.bg-accent\/10 {
+  background-color: rgba(255, 107, 107, 0.1) !important;
+}
+.bg-accent\/5 {
+  background-color: rgba(255, 107, 107, 0.05) !important;
+}
+
+.bg-darkbg {
+  background-color: #1A1A2E !important;
+}
+.bg-lightbg {
+  background-color: #F8F9FA !important;
+}
+
+/* Gradients Overrides */
+.bg-gradient-primary {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+.bg-gradient-accent {
+  background-image: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+}
+.bg-gradient-secondary {
+  background-image: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+}
+
+/* Glassmorphism panel styling */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+.glass-panel-dark {
+  background: rgba(26, 26, 46, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Neumorphic shadow styling */
+.neumorph-btn {
+  background: #F8F9FA !important;
+  box-shadow: 6px 6px 12px #e5e7eb, -6px -6px 12px #ffffff !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.neumorph-btn:hover {
+  box-shadow: 2px 2px 5px #e5e7eb, -2px -2px 5px #ffffff !important;
+  transform: translateY(1px) !important;
+}
+
+.neumorph-btn:active {
+  box-shadow: inset 3px 3px 6px #e5e7eb, inset -3px -3px 6px #ffffff !important;
+}
+
+/* Animated gradient movement */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200% !important;
+  animation: gradient-shift 8s ease infinite !important;
+}
+
+/* Float movement */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite !important;
+}
+
+/* Soft custom scrolls */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6C63FF;
+}

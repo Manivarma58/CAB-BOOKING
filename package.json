@@ -1,0 +1,17 @@
+{
+  "name": "ucab-root",
+  "version": "1.0.0",
+  "description": "UCab MERN Cab Booking Application",
+  "scripts": {
+    "install-all": "npm install --prefix server && npm install --prefix client",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "node server/server.js",
+    "test": "npm run test --prefix server",
+    "seed": "npm run seed --prefix server"
+  },
+  "keywords": [],
+  "author": "Antigravity Pair Program",
+  "license": "ISC"
+}
